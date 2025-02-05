@@ -3,13 +3,13 @@ namespace Menu{
         public static string Imprimir(){
             string option = "";
             do{
-                Console.WriteLine("[Adição] -> 1");
-                Console.WriteLine("[Subtração] -> 2");
-                Console.WriteLine("[Multiplicação] -> 3");
-                Console.WriteLine("[Divisão] -> 4");
-                Console.WriteLine("[Sair] -> 5");
+                Console.WriteLine("[Adição] -> +");
+                Console.WriteLine("[Subtração] -> -");
+                Console.WriteLine("[Multiplicação] -> *");
+                Console.WriteLine("[Divisão] -> /");
+                Console.WriteLine("[Sair] -> s");
                 return option = Console.ReadLine();
-            }while(option != "5");
+            }while(option != "s");
         }
     }
 }
