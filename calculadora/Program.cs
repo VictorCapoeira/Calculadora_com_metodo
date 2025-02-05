@@ -17,16 +17,16 @@ valor_b = float.Parse(Console.ReadLine());
 switch (operacao)
 {
     case "1":
-        Calculadora.Contas.Soma(valor_a, valor_b);
+        Console.WriteLine(Calculadora.Contas.Soma(valor_a, valor_b));
         break;
     case "2":
-        Calculadora.Contas.Soma(valor_a, valor_b);
+        Console.WriteLine(Calculadora.Contas.Subtracao(valor_a, valor_b));
         break;
     case "3":
-        Calculadora.Contas.Soma(valor_a, valor_b);
+        Console.WriteLine(Calculadora.Contas.Multiplicacaoo(valor_a, valor_b));
         break;
     case "4":
-        Calculadora.Contas.Soma(valor_a, valor_b);
+        Console.WriteLine(Calculadora.Contas.Divisao(valor_a, valor_b));
         break;
     default:
         Console.WriteLine("Error!");
