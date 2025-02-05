@@ -13,8 +13,9 @@ namespace Menu{
         }
         public static float Obter_valor(){
             while(true){
+                Console.WriteLine("Informe o valor: ");
                 if(float.TryParse(Console.ReadLine(), out float valor_x)){
-                    Console.WriteLine("Informe o valor: ");
+                    
                     return valor_x;
                 }
                 else
@@ -22,6 +23,9 @@ namespace Menu{
                     Console.WriteLine("Valor inválido!");
                 }
             }
+        }
+        public static void Exibir_valores(float valor_a, float valor_b, string valor_op, float resultado){
+            Console.WriteLine(valor_a + " " + valor_op + " " + valor_b + "  = " + resultado);
         }
     }
 }
