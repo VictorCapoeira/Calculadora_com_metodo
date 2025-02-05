@@ -11,5 +11,17 @@ namespace Menu{
                 return option = Console.ReadLine();
             }while(option != "s");
         }
+        public static float Obter_valor(){
+            while(true){
+                if(float.TryParse(Console.ReadLine(), out float valor_x)){
+                    Console.WriteLine("Informe o valor: ");
+                    return valor_x;
+                }
+                else
+                {
+                    Console.WriteLine("Valor inválido!");
+                }
+            }
+        }
     }
 }
