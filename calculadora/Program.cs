@@ -1,21 +1,22 @@
 ﻿using Menu;
 using Calculadora;
+using Layout;
 
 float valor_a;
 float valor_b;
 string operacao = "";
 
-Console.WriteLine("Calculadora");
+Cores.Amarelo("Calculadora");
 while (operacao != "s")
 {
-    Console.WriteLine("Selecione a operaçã: ");
+    Cores.Amarelo("Selecione a operaçã: ");
     operacao = Escolha.Imprimir();
     Console.Clear();
 
 
     if (operacao == "5")
     {
-        Console.WriteLine("Programa encerrado!");
+        Cores.Amarelo("Programa encerrado!");
     }
     else
     {
